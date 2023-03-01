@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+            margin: 10px;
+        }
+        header {
+            background-color: white;
+            padding: 2px;
+            margin: 10px;
+        }
+        nav {
+            background-color: gray;
+            padding: 2px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.373);
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.288);
+        }
+        article {
+            background-color: white;
+            padding: 5px;
+        }
+        h2 {
+            outline: auto;
+            padding: 2px;
+            background-color: rgb(255, 64, 64);
+        }
+
+
+        article > aside {
+            background-color: rgb(101, 169, 227);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Linkedin</a>
+            <a href="#">GitHub</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+            <p>Esportes tecnologia e Cinema </p>
+        </section>
+        <section>
+            <article>
+                <h2>Resultado dos jogos da rodada</h2>
+                <p>
+                    Liverpol X Real madrid
+                </p>
+                <h2>Celulares que valem a pena comprar</h2>
+                 <ol>
+                    <li>galaxy a33</li>
+                    <li>Galaxym23</li>
+                    <li>Galaxy a13</li>
+                 </ol>
+                <h2>Filmes recém lançados</h2>
+                <ul>
+                    <li>Top Gun Maverick</li>
+                    <li>Trem bala</li>
+                    <li>Gato de botas</li>
+                </ul>
+                <aside>
+                    <p>Artigo por Marcos Okipney</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Maverick Company</p>
+    </footer>
+    
+</body>
+</html>
