@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin-bottom: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.header {
+    background-color: #1d1e20;
+    display: flex;
+    flex-wrap: wrap; /* o logo vai prevalecer sobre o menu no caso do celular */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    background: rgb(255, 38, 0);
+}
+
+/* CSS GRID2 */
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.sidebar > div {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        display: flex;
+        overflow: scroll; /* Coloca uma barra de rolagem */
+    }
+    .sidebar > div {
+        flex: 1 0 200px;
+        margin: 0 10px;
+    }
+}
+    

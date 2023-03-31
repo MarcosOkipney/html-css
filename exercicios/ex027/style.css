@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.header {
+    background-color: #1d1e20;
+    display: flex;
+    flex-wrap: wrap; /* o logo vai prevalecer sobre o menu no caso do celular */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    background: rgb(255, 38, 0);
+}
+
+/* CSS FLEXBOX */
+
+.flex {
+    display: flex; /* Fica lado a lado */
+    flex-wrap: wrap; /* Permite quebrar a img */
+    max-width: 800px;
+    margin: 0px auto; /* para alinhar ao centro após os 800px */
+}
+
+.flex > div {
+    flex: 1 1 200px; /*a img vai expandir e vai quebrar após passar 200px*/
+    margin: 10px;
+}
+
+
